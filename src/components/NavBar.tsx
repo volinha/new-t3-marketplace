@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function NavBar() {
 
-const user = useUser();
+/* const user = useUser(); */
 
 return (
 <nav className="border-gray-200 bg-white dark:bg-gray-900">
@@ -46,7 +46,7 @@ return (
                 Home
             </a>
             </li>
-            {user.isSignedIn && 
+            {/* {user.isSignedIn && */} 
             <li>
             <Link
                 href="/sell"
@@ -55,12 +55,12 @@ return (
             >
                 Sell
             </Link>
-            </li>}
-            {!user.isSignedIn && <SignInButton>
+            </li>{/* } */}
+            {/* {!user.isSignedIn && */} <SignInButton>
             <span className="block rounded cursor-pointer bg-blue-700 py-2 pl-3 pr-4 text-white dark:text-white md:bg-transparent md:p-0 md:text-blue-700 md:dark:text-blue-500">
                 Sign In
             </span>
-            </SignInButton>}
+            </SignInButton>{/* } */}
             <UserButton />
         </ul>
         </div>
